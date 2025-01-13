@@ -26,6 +26,13 @@
     width: 100%;
     background-color:darkseagreen;
     border: 3px solid;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.calculator-display p {
+    font-size: 50px;
 }
 
 .calculator-buttons {
@@ -52,18 +59,13 @@
 }
 
 .buttons--numbers {
-    flex: 3;
+    flex: 4;
     display: flex;
     flex-wrap: wrap;
 }
 
 .buttons--numbers > * {
     flex: 1 1 calc(100%/3);
-}
-
-.buttons--zero-and-decimal {
-    flex: 1;
-    display: flex;
 }
 
 .zero-button {

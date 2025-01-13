@@ -7,7 +7,6 @@
 .calculator-wrapper {
     width: 100vw;
     height: 100vh;
-    /* border: 1px solid; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,6 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: end;
+    margin-bottom: 5px;
 }
 
 .calculator-display p {
@@ -40,18 +40,21 @@
     width: 100%;
     background-color: cornflowerblue;
     display: flex;
+    gap: 5px;
 }
 
 /*styling of input and number buttons*/
 .input-number-buttons-wrapper {
     flex: 3;
     display: flex;
+    gap: 5px;
     flex-direction: column;
 }
 
 .buttons--input {
     flex: 1;
     display: flex;
+    gap:5px;
 }
 
 .buttons--input > * {

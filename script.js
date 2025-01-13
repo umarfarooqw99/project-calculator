@@ -103,6 +103,7 @@ operators.addEventListener('click', event => {
             break;
         case '=':
             if(operator) evaluateExistingExpression();
+            firstNumber = parseFloat(display.textContent);
             break;
     }
 })
@@ -137,12 +138,7 @@ function checkIfDecimalExists() {
 }
 
 function getFirstNumber() {
-    let firstNumber = 0;
-    let displayValue = display.textContent;
-    if(displayValue.length > 1) {
-        firstNumber = displayValue.substring(0, displayValue.length-1);
-    }
-    return firstNumber;
+    return parseFloat(display.textContent);
 }
 
 function clearValues() {
